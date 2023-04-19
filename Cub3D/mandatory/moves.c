@@ -6,15 +6,17 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 05:12:31 by absela            #+#    #+#             */
-/*   Updated: 2023/04/18 06:59:50 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 22:57:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 int	destruction(t_cub *data)
 {
-	(void)data;
+	mlx_clear_window(data->mlx->mlx, data->mlx->win);
+	mlx_destroy_window(data->mlx->mlx, data->mlx->win);
+	free(data->info->f);
 	system("leaks cub3D");
 	exit(0);
 }

@@ -6,11 +6,11 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 04:48:45 by absela            #+#    #+#             */
-/*   Updated: 2023/04/18 05:10:34 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 19:49:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 int	get_ray_angle(double ray_ang, int flag)
 {

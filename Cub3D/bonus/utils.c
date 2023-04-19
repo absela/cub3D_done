@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abelahce <abelahce@student.1337.ma>        +#+  +:+       +#+        */
+/*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/03 01:30:37 by abelahce          #+#    #+#             */
-/*   Updated: 2023/04/03 03:40:59 by abelahce         ###   ########.fr       */
+/*   Updated: 2023/04/18 19:49:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 void	ft_free(char *str)
 {

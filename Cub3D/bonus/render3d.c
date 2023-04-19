@@ -6,11 +6,11 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/05 05:03:31 by absela            #+#    #+#             */
-/*   Updated: 2023/04/18 06:50:07 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 19:49:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 void	draw_second_half(int i, double y, t_cub *data, double pd)
 {

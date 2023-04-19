@@ -6,11 +6,11 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 00:05:13 by abelahce          #+#    #+#             */
-/*   Updated: 2023/04/18 06:46:47 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 19:49:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 int	main(int ac, char **av)
 {

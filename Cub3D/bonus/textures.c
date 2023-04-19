@@ -6,11 +6,11 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 06:38:35 by absela            #+#    #+#             */
-/*   Updated: 2023/04/18 06:49:37 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 19:49:19 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 void	resize(t_data *ress, t_data *img)
 {

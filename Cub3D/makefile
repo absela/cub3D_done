@@ -1,29 +1,38 @@
 NAME = cub3d
 
-SRCS = cub3d.c parsing1.c parsing2.c parsing3.c parsing4.c utils.c graphic.c init_all.c raycasting.c raycasting1.c utils_color.c render3d.c moves.c moves_sec.c textures.c
+SRCS = mandatory/cub3d.c mandatory/parsing1.c mandatory/parsing2.c mandatory/parsing3.c mandatory/parsing4.c mandatory/utils.c mandatory/graphic.c mandatory/init_all.c mandatory/raycasting.c mandatory/raycasting1.c mandatory/utils_color.c mandatory/render3d.c mandatory/moves.c mandatory/moves_sec.c mandatory/textures.c
+
+BSRCS = bonus/cub3d.c bonus/parsing1.c bonus/parsing2.c bonus/parsing3.c bonus/parsing4.c bonus/utils.c bonus/graphic.c bonus/init_all.c bonus/raycasting.c bonus/raycasting1.c bonus/utils_color.c bonus/render3d.c bonus/moves.c bonus/moves_sec.c bonus/textures.c
 
 OBJS = $(SRCS:.c=.o)
 
+BOBJS = $(BSRCS:.c=.o)
+
 CC = cc
 
+HDR = include/cub3d.h
 
-# CFLAGS = -Wall -Wextra -Werror -fsanitize=address
-CFLAGS = -Wall -Wextra -Werror 
+CFLAGS = -Wall -Wextra -Werror
 
 RM = rm -f
 
-%.o : %.c  cub3d.h
+%.o : %.c  ${HDR}
 	$(CC) $(CFLAGS) -c $< -o $(<:.c=.o)
 
-$(NAME): $(OBJS) cub3d.h
+$(NAME): $(OBJS) ${HDR}
 	cd libft && make
 	cd ..
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) libft/libft.a -lmlx -framework OpenGL -framework AppKit
 
+bonus: $(BOBJS) ${HDR}
+	cd libft && make
+	cd ..
+	$(CC) $(CFLAGS) -o $(NAME) $(BOBJS) libft/libft.a -lmlx -framework OpenGL -framework AppKit
+
 all: $(NAME)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BOBJS)
 
 fclean: clean
 	cd libft && make fclean

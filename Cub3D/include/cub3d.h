@@ -6,7 +6,7 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 00:51:53 by abelahce          #+#    #+#             */
-/*   Updated: 2023/04/18 06:50:45 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 21:49:14 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
 # define PURPLE 0x8000FF
 # define SKY 0x00FFFF
 # define MVSPEED 80
-# define TUSPEED 0.0523598775597
+# define TUSPEED 0.0923598775597
+# define TUSPEED1 0.0523598775597
 # define FOV 1.0471975512
 # define ADJ 0.0001
 # include <fcntl.h>
@@ -30,7 +31,7 @@
 # include <unistd.h>
 # include <math.h>
 # include "mlx.h"
-# include "libft/libft.h"
+# include "../libft/libft.h"
 
 typedef struct s_draw
 {
@@ -175,5 +176,6 @@ int		destruction(t_cub *data);
 void	get_textures(t_cub *data);
 t_data	*get_tex(t_cub *data, int i, double *n, double *y);
 void	scale_var(int *m, double *y, double *n, double projection_distance);
+int		on_mousemove(int x, int y, t_cub *data);
 
 #endif

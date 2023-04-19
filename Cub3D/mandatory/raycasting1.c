@@ -6,11 +6,11 @@
 /*   By: absela <absela@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 04:53:49 by absela            #+#    #+#             */
-/*   Updated: 2023/04/18 05:01:01 by absela           ###   ########.fr       */
+/*   Updated: 2023/04/18 22:42:56 by absela           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3d.h"
+#include "../include/cub3d.h"
 
 void	casting(t_cub *data, double ray_angl, t_ray *ray_info)
 {
